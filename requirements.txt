@@ -1,0 +1,8 @@
+transformers==4.57.3
+sentencepiece
+accelerate
+gradio==6.31.0
+pypdf
+beautifulsoup4
+requests
+spaces

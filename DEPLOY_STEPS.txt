@@ -1,0 +1,24 @@
+DEPLOY TO YOUR EXISTING HUGGING FACE SPACE
+
+Existing Space:
+https://huggingface.co/spaces/DEVANSH0000000/techsummarizer-ai
+
+1. Open the Space and select the Files tab.
+2. Upload these three files from this folder to the ROOT of the Space:
+   - app.py
+   - requirements.txt
+   - README.md
+3. If asked whether to overwrite README.md, choose replace/commit the new version.
+4. Commit the changes. Hugging Face will build and restart the Space automatically.
+5. Open the Logs tab and wait for the model download and the message:
+   "TechSummarizer AI model loaded."
+6. Open the App tab and test Text, PDF, and Website URL.
+
+IMPORTANT HARDWARE NOTE
+This app is prepared for a Hugging Face ZeroGPU Space. In the Space Settings, select ZeroGPU if your account/Space is eligible. The app uses spaces.GPU around model inference. If ZeroGPU is not available, do not randomly change package versions; share the Space build/runtime logs so the app can be adapted to the hardware you can use.
+
+PERMANENT-LINK NOTE
+The Hugging Face Space URL is a persistent address; it does not mean the app runs 24/7. Free Spaces can sleep when inactive, and free ZeroGPU has daily usage quotas. Visitors can wake a sleeping Space by opening it, but startup can take time.
+
+SECURITY / PRIVACY
+A public Space is accessible to others. Do not upload private or confidential PDFs. Anyone with access to a public Space can use its app. Do not put account passwords or access tokens in app.py or README.md.
